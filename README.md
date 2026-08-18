@@ -50,7 +50,7 @@ This is the initial stable release of the **Tow Service** gameplay script, devel
 
 ## 🔐 Licensing, Copyright & Terms of Use
 
-**Copyright (c) 2026 C1rcle. All Rights Reserved.**
+**Copyright (c) 2026 C1rcle.**
 
 * **Distribution Control:** Mirroring or re-uploading this asset to third-party file-sharing sites, scraping platforms, or pirate repositories (e.g., ModLand, WorldOfMods, TopMods) is explicitly forbidden. Authorized distribution is restricted to the official BeamNG Repository and this GitHub page.
 
