@@ -1,0 +1,18 @@
+{
+  "name": "Tow Service",
+  "author": "Tow Mod",
+  "version": "1.0",
+  "description": "Managing the towing service: selecting and canceling orders",
+  "directive": "towServiceSettings",
+  "domElement": "<tow-service-settings></tow-service-settings>",
+  "css": {
+    "appCss": "app.css",
+    "width": "260px",
+    "height": "160px",
+    "min-width": "220px",
+    "min-height": "140px",
+    "top": "10px",
+    "left": "10px"
+  },
+  "preserveAspectRatio": false
+}

@@ -1,0 +1,76 @@
+.tow-app-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 24, 30, 0.88);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  padding: 12px;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.tow-header {
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e8590c;
+}
+
+.tow-title {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #f8f9fa;
+}
+
+.tow-subtitle {
+  font-size: 11px;
+  color: #adb5bd;
+  font-weight: 500;
+}
+
+.tow-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #e8590c;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(232, 89, 12, 0.3);
+}
+
+.btn-primary:hover {
+  background: #f76707;
+}
+
+.btn-danger {
+  background: rgba(201, 42, 42, 0.25);
+  color: #ff8787;
+  border: 1px solid rgba(201, 42, 42, 0.4);
+}
+
+.btn-danger:hover {
+  background: rgba(201, 42, 42, 0.45);
+  color: #ffffff;
+}
