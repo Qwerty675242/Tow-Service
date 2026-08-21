@@ -1,4 +1,4 @@
-# Tow Service v0.11 (Experemental Release) — Native Script & UI App
+# Tow Service v0.20 (Experemental Release) — Native Script & UI App
 
 This is the initial stable release of the **Tow Service** gameplay script, developed natively for **BeamNG.drive v0.39**. The project is designed as an ultra-lightweight, high-performance UI Application and Lua extension that injects a parking enforcement game loop without altering core game files or requiring heavy map modifications.
 
@@ -7,7 +7,7 @@ This is the initial stable release of the **Tow Service** gameplay script, devel
 ## 🛠 Detailed Feature Breakdown
 
 ### 1. Procedural Spawning Architecture
-* **Coordinate Matrix:** Implements a database of 30 distinct vector positions across the **West Coast USA** map, specifically curated to present varying levels of physics-based towing difficulty (narrow alleys, tight parallel parking, and obstacle-blocked spaces).
+* **Coordinate Matrix:** Implements a database of 60 distinct vector positions across the **West Coast USA** map, specifically curated to present varying levels of physics-based towing difficulty (narrow alleys, tight parallel parking, and obstacle-blocked spaces).
 * **Dynamic Entity Management:** Cars are spawned dynamically via the GE Lua layer on runtime. The script listens for the initialization trigger, selects a random coordinate, and spawns the target vehicle instantly without stutter or frame drops.
 * **Garbage Collection & Cleanup:** Built-in memory protection routines ensure that when a mission is canceled or completed, the spawned vehicle and its associated memory pointers are completely wiped from the scene, preventing RAM leaks and physics engine bloat.
 
@@ -23,7 +23,12 @@ This is the initial stable release of the **Tow Service** gameplay script, devel
   * `Green Cylinder Node` — Marks the boundaries of the designated secure impound lot area.
 * **Dynamic Visibility:** Markers are tied directly to the state machine. They activate instantly upon order acceptance and vanish completely the exact millisecond the mission criteria are met.
 
-### 4. Physics Engine Triggers & Validation
+### 4. Localization and Built-in Economy
+* Multilingual interface: The UI fully supports three languages: English, Russian, and Polish.
+* Dynamic earnings counter: Each successful vehicle impoundment updates your balance in the "EARNINGS" line.
+* Currency selection: Customize the interface for your region—three currencies are available: dollars (USD $), rubles (RUB ₽), and złoty (PLN zł).
+
+### 5. Physics Engine Triggers & Validation
 * **Proximity Tracking:** Implements real-time spatial checks to monitor the exact distance between the towed vehicle and the target impound zone.
 * **Delivery Validation:** The script uses a rigid trigger zone check. The mission is marked as successful only when the tracked vehicle's bounding box intersects with the designated green radius at the impound lot while separated from the player's towing apparatus (if unhooked) or stopped inside the zone.
 * **Lua Extension Isolation:** The code runs in its own isolated GE extension sandbox. This guarantees 100% compatibility with vanilla traffic AI, custom vehicle configurations, and default game scenarios.
@@ -32,10 +37,10 @@ This is the initial stable release of the **Tow Service** gameplay script, devel
 
 ## 📦 Technical Specification
 
-* **Asset Footprint:** ~15 KB pure source text (expands to ~2.1 MB inside the distribution package due to high-resolution metadata and interface iconography).
+* **Asset Footprint:** ~18 KB pure source text (expands to ~2.1 MB inside the distribution package due to high-resolution metadata and interface iconography).
 * **Performance Impact:** 0% CPU/GPU overhead. Uses native Lua-to-C++ engine hooks.
 * **Dependencies:** None. Completely standalone.
-* **Map Support:** West Coast USA (Exclusive for v0.11 alpha).
+* **Map Support:** West Coast USA (Exclusive for v0.20 alpha).
 
 ---
 
